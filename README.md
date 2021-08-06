@@ -2,6 +2,11 @@
 
 >This task is given to check my understanding and skill set of Golang.
 
+
+### Technologies Used
+**Backend**: Go\
+**Database**: MongoDB
+
 ## Steps to follow for task execution
 
 1. Clone this repo using following command in your Go workplace:
