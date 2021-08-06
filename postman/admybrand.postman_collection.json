@@ -1,0 +1,138 @@
+{
+	"info": {
+		"_postman_id": "79791c2f-17ee-44d8-9f0e-350566117613",
+		"name": "admybrand",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"Name\": \"Piyush\",\n    \"Dob\": \"1997-07-11\",\n    \"Address\": \"Piyush's Address\",\n    \"Description\": \"Piyush's Description\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/adduser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"adduser"
+					],
+					"query": [
+						{
+							"key": "Id",
+							"value": "1",
+							"disabled": true
+						},
+						{
+							"key": "Name",
+							"value": "Piyush",
+							"disabled": true
+						},
+						{
+							"key": "Dob",
+							"value": null,
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/users",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get An User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/user/610c5df47b653f779aa2a041",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"user",
+						"610c5df47b653f779aa2a041"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Update An User",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"ID\": \"610c5df47b653f779aa2a041\",\n    \"Name\": \"Piyush\",\n    \"Dob\": \"1997-07-11\",\n    \"Address\": \"Piyush's Address\",\n    \"Description\": \"Modified Description\"\n}"
+				},
+				"url": {
+					"raw": "localhost:8080/updateuser",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"updateuser"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete An User",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "localhost:8080/deleteuser/610c7373537eda325d239d43",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"deleteuser",
+						"610c7373537eda325d239d43"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
