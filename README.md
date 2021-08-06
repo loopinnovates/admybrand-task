@@ -59,7 +59,7 @@ go build
 **2. GET /user/:ID**
 > This api is used to return information of specific user whose ID is given.
 ###### Example:
-> URL: _"http://localhost:8080/user/610c959fc2937d8ae49d12a5"_\
+> URL: _"http://localhost:8080/user/610c959fc2937d8ae49d12a5"_ \
 > Here, "610c959fc2937d8ae49d12a5" is an user id.
 
 **3. POST /adduser**
