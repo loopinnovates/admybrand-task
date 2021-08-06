@@ -174,7 +174,7 @@ func UpdateUser(c *gin.Context) {
 		},
 		bson.D{
 			{"$set", bson.D{
-				{Key: "Name", Value: newUser.Name},
+				{Key: "name", Value: newUser.Name},
 				{Key: "Dob", Value: newUser.Dob},
 				{Key: "Address", Value: newUser.Address},
 				{Key: "Description", Value: newUser.Description},
